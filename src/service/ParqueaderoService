@@ -1,1 +1,53 @@
 
+package service;
+
+import exception.ReciboNoEncontradoException;
+import model.Recibo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ParqueaderoService {
+
+    private List<Recibo> recibos;
+
+    public ParqueaderoService() {
+        recibos = new ArrayList<>();
+    }
+
+    public void agregarRecibo(Recibo recibo) {
+
+        if (recibo == null) {
+            throw new IllegalArgumentException("El recibo es inválido.");
+        }
+
+        recibos.add(recibo);
+    }
+
+    public void mostrarRecibos() {
+
+        if (recibos.isEmpty()) {
+            System.out.println("No hay recibos registrados.");
+            return;
+        }
+
+        for (Recibo r : recibos) {
+            System.out.println(r);
+        }
+    }
+
+    public Recibo buscarPorPlaca(String placa) {
+
+        for (Recibo r : recibos) {
+
+            if (r.getPlaca().equalsIgnoreCase(placa)) {
+                return r;
+            }
+        }
+
+        throw new ReciboNoEncontradoException(
+                "No existe un recibo con esa placa."
+        );
+    }
+}
+
