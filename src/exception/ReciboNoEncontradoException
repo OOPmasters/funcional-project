@@ -1,1 +1,10 @@
 
+package exception;
+
+public class ReciboNoEncontradoException extends RuntimeException {
+
+    public ReciboNoEncontradoException(String mensaje) {
+        super(mensaje);
+    }
+}
+
