@@ -18,7 +18,7 @@ public class ParqueaderoApp {
             System.out.println("4. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
-            scanner.nextLine(); // Limpiar buffer
+            scanner.nextLine(); 
 
             if (opcion == 1) {
                 String placa;
