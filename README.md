@@ -1,27 +1,21 @@
 # funcional-project
 
-# Sistema de Recibos para Parqueadero
+# Sistema de Parqueadero
 
-Proyecto realizado en Java usando Programación Orientada a Objetos.
+Proyecto desarrollado en Java utilizando Programación Orientada a Objetos.
 
-## Conceptos usados
+### Conceptos aplicados:
 
-- Clases y objetos
+- Clases
+- Objetos
 - Encapsulamiento
-- Constructores
-- Colecciones (ArrayList)
-- Manejo de excepciones
-- Organización por paquetes
-- Programación Orientada a Objetos
+- Herencia
+- Polimorfismo
+- Colecciones
+- Excepciones
 
-## Paquetes
+### Herramientas:
 
-- model
-- service
-- exception
-- app
-
-## Clase principal
-
-app.Main
-
+- Java
+- Scanner
+- ArrayList
